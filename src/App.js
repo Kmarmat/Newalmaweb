@@ -5,6 +5,7 @@ import { Route,Routes} from "react-router-dom"
 
 import Home from './page/Home';
 import FormComponent from './page/Form/Form';
+import Submit from './page/Submit';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/'>
           <Route index element={<Home/>}/>
           <Route path='form' element={<FormComponent/>}/>
+          <Route path='submit' element ={<Submit/>}/>
           
         
         </Route>

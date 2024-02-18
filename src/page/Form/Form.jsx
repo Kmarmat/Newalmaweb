@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./form.scss"
+import { NavLink } from 'react-router-dom';
 // import NavBar from '../../components/Navbar/NavBar';
 
 const FormComponent = () => {
@@ -106,7 +107,10 @@ const FormComponent = () => {
             onChange={handleInputChange}
           />
         </label><br />
+        <NavLink to="/submit">
+
         <button type="submit">Submit</button>
+        </NavLink>
       </form>
     </div>
       </div>
