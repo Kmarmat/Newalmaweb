@@ -8,9 +8,8 @@ function Things() {
                 <div class="list">
                     <ul><strong>Automation for Efficiency:</strong> Alma is committed to liberating healthcare professionals from manual tasks through efficient automation.
                     </ul>
-                    <ul><strong>AI-Driven Transformation:</strong>Going beyond mere product features, we view AI as the transformative force steering healthcare towards intelligent solutions.</ul>
-                        <ul><strong>Empowering Relationships:</strong>
-                        Alma values strong connections, reflected in Wellness Insight-delivering profound insights for informed childcare.</ul>
+                    <ul><strong>AI-Driven Transformation:</strong> Going beyond mere product features, we view AI as the transformative force steering healthcare towards intelligent solutions.</ul>
+                        <ul><strong>Empowering Relationships:</strong> Alma values strong connections, reflected in Wellness Insight-delivering profound insights for informed childcare.</ul>
                         </div>
                         </div>
             <div class="things">
