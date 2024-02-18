@@ -118,10 +118,10 @@ const FormComponent = () => {
             onChange={handleInputChange}
           />
         </label><br />
-        {/* <NavLink to="/submit"> */}
+        <NavLink to="/submit">
 
         <button type="submit">Submit</button>
-        {/* </NavLink> */}
+        </NavLink>
       </form>
     </div>
       </div>
