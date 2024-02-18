@@ -1,0 +1,92 @@
+.maincontainer{
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    
+    .container{
+    
+        width: 620px;
+        position: sticky;
+        padding-bottom: 50px;
+      
+        .logoBlock{
+            // margin: 50px 0;
+            margin: 8rem 0;
+            display: flex;
+            align-items: center;
+            
+            .logo{
+                width: 40px
+                
+            }
+            .logotext{
+                font-size:25px;
+                font-weight: 550;
+                align-items: center;
+            }
+        }
+        .heading{
+           
+            
+            padding: 10px;
+            display: flex;
+         
+           
+            
+            }
+           
+            .heading span{
+                font-size:38px;
+                font-weight: 500;
+                color: rgba(36, 34, 34, 0.84);
+                
+           
+               
+
+            }
+        
+
+        }  
+        .btn{
+           
+          
+            
+            width: 200px;
+            height: 20px;
+            border: 2px solid rgba(147, 146, 146, 0.667);
+            font-size: 20px;
+            margin-left: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 80px;
+            color: rgba(46, 44, 44, 0.831);
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            
+            
+     }  
+     .footer{
+        font-size: 14px;
+        margin-left: 30px;
+        color: rgba(35, 32, 32, 0.854);
+        
+        
+     }
+     .footer a{
+        text-decoration: none;
+        margin-left: 10px;
+        color: rgba(35, 32, 32, 0.854);
+    }
+    .footer img{
+        width: 20px;
+        
+    }
+    
+}
+    
+        
+        
+          
