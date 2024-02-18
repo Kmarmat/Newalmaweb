@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import "./form.scss"
 import { NavLink } from 'react-router-dom';
+import { getDatabase, ref, set } from "firebase/database";
+import { database } from '../../firebase';
 // import NavBar from '../../components/Navbar/NavBar';
-
+import { v4 as uuidv4 } from "uuid";
 const FormComponent = () => {
-  
+  // set(ref(database, 'users/' + "kunal"), {
+  //   username: "kunal",
+  //   email: "kunal@",
+  //   profile_picture : "imageUrl"
+  // });
+  const token = uuidv4();
+
   const [formData, setFormData] = useState({
     InstituteName: '',
       Address: '',
@@ -28,6 +36,8 @@ const FormComponent = () => {
     // Here you can perform actions like sending form data to a server
     console.log(formData);
     // Reset form after submission
+     set(ref(database, 'users/'+token), formData);
+    console.log("asdfasdf")
     setFormData({
       InstituteName: '',
       Address: '',
@@ -40,6 +50,7 @@ const FormComponent = () => {
 
   return (
     <div className="form">
+      {/* <span onClick={}></span> */}
       <div className="formbox">
 
     <div className="form-container">
@@ -103,14 +114,14 @@ const FormComponent = () => {
             type="text"
             name="contactno"
             className='input'
-            value={formData.contctno}
+            value={formData.contactno}
             onChange={handleInputChange}
           />
         </label><br />
-        <NavLink to="/submit">
+        {/* <NavLink to="/submit"> */}
 
         <button type="submit">Submit</button>
-        </NavLink>
+        {/* </NavLink> */}
       </form>
     </div>
       </div>
