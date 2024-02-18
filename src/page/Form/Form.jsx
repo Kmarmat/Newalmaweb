@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./form.scss"
-import { NavLink } from 'react-router-dom';
+import { History } from 'react-router-dom';
 import { getDatabase, ref, set } from "firebase/database";
 import { database } from '../../firebase';
 // import NavBar from '../../components/Navbar/NavBar';
@@ -12,6 +12,10 @@ const FormComponent = () => {
   //   profile_picture : "imageUrl"
   // });
   const token = uuidv4();
+ 
+
+  
+  
 
   const [formData, setFormData] = useState({
     InstituteName: '',
@@ -118,10 +122,10 @@ const FormComponent = () => {
             onChange={handleInputChange}
           />
         </label><br />
-        <NavLink to="/submit">
+        {/* <Link to="/submit"> */}
 
         <button type="submit">Submit</button>
-        </NavLink>
+        {/* </Link> */}
       </form>
     </div>
       </div>
@@ -132,3 +136,9 @@ const FormComponent = () => {
 };
 
 export default FormComponent;
+
+
+  
+
+
+
