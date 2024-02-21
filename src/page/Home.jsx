@@ -9,8 +9,8 @@ const Container = () => {
             <div className="container">
                 <div className="logoBlock">
 
-                    {/* <img className='logo' src="https://firebasestorage.googleapis.com/v0/b/eacc-16da4.appspot.com/o/nmp.svg?alt=media&token=c2b9a14a-e36c-46f5-bb2c-3f28704b0537" alt="not found!" /> */}
-                    <span className='logotext'>AI assistant for child welfare</span>
+                    <img className='logo' src="https://firebasestorage.googleapis.com/v0/b/eacc-16da4.appspot.com/o/nmp.svg?alt=media&token=c2b9a14a-e36c-46f5-bb2c-3f28704b0537" alt="not found!" />
+                    <span className='logotext'>Alma</span>
                 </div>
                 <div className="heading">
                     <span>

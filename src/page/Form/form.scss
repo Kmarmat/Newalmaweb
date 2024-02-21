@@ -3,7 +3,8 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  
+  // border: 1px solid red;
+  overflow: hidden;
 
   .formbox{
     height: 100vh;
@@ -15,8 +16,8 @@
     .form-container {
       
       margin: auto;
-      margin-top: 75px;
-      background-color: rgba(57, 54, 54, 0.922);
+      margin-top: 150px;
+      background-color: rgba(249, 248, 248, 0.982);
      
       border-radius: 30px;
       justify-content: center;
@@ -25,7 +26,7 @@
       
       
       .heading{
-        color: rgb(216, 216, 216);
+        color: rgba(63, 58, 58, 0.82);
         padding-top: 30px;
         margin-bottom: 50px;
         
@@ -66,7 +67,7 @@
         display: block;
        
         font-size: 18px;
-        color: white;
+        color: rgba(27, 25, 25, 0.826);
         
         margin-bottom: 5px;
   
@@ -75,6 +76,7 @@
     
       input {
         width: 50%;
+        height: 25px;
         padding: 1px;
         margin-bottom: 10px;
         border: 1px solid #ccc;

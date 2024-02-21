@@ -1,29 +1,21 @@
 import React, { useState } from 'react';
 import "./form.scss"
-import { History } from 'react-router-dom';
+// import { Histor } from 'react-router-dom';
 import { getDatabase, ref, set } from "firebase/database";
 import { database } from '../../firebase';
 // import NavBar from '../../components/Navbar/NavBar';
 import { v4 as uuidv4 } from "uuid";
+import { useNavigate } from 'react-router-dom';
 const FormComponent = () => {
-  // set(ref(database, 'users/' + "kunal"), {
-  //   username: "kunal",
-  //   email: "kunal@",
-  //   profile_picture : "imageUrl"
-  // });
+  
   const token = uuidv4();
  
-
-  
-  
-
   const [formData, setFormData] = useState({
-    InstituteName: '',
-      Address: '',
-      city: '',
-      state:'',
-      contactno:'',
+    Firstname:'',
+      Lastname:'',
+      email:'',
   });
+  const navhook = useNavigate();
 
   // Handle input change
   const handleInputChange = (e) => {
@@ -37,18 +29,18 @@ const FormComponent = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+   
     // Here you can perform actions like sending form data to a server
     console.log(formData);
     // Reset form after submission
      set(ref(database, 'users/'+token), formData);
     console.log("asdfasdf")
     setFormData({
-      InstituteName: '',
-      Address: '',
-      city: '',
-      state:'',
-      contactno:'',
+      Firstname:'',
+      Lastname:'',
+      email:'',
     });
+    navhook('/submit');
   };
 
 
@@ -61,66 +53,41 @@ const FormComponent = () => {
       <h1 className='heading'>Create Your Account</h1>
       <form onSubmit={handleSubmit} className='from'>
         <label className='label' >
-         <div className="name">Name of the Institution :</div>
+         <div className="name">First Name :</div>
           <input
             type="text"
-            name="InstituteName"
+            name="Firstname"
             className='input'
-            value={formData.InstituteName}
+            value={formData.Firstname}
             onChange={handleInputChange}
           />
         </label>
         <br />
         <label className='label' >
-         <div className="name">Address :</div>
+         <div className="name">Last Name :</div>
 
           
           <input
             type="text"
             className='input'
-            name="Address"
-            value={formData.Address}
+            name="Lastname"
+            value={formData.Lastname}
             onChange={handleInputChange}
           />
         </label>
         <br />
         <label className='label' >
           
-          <div className="name">City :</div>
+          <div className="name">Email :</div>
 
           <input
-            type="text"
-            name="city"
+            type="email"
+            name="email"
             className='input'
-            value={formData.city}
+            value={formData.email}
             onChange={handleInputChange}
           />
-        </label>
-        <br />
-        <label className='label' >
-        <div className="name">State :</div>
-
-         
-          <input
-            type="text"
-            name="state"
-            className='input'
-            value={formData.state}
-            onChange={handleInputChange}
-          />
-        </label>
-        <br />
-        <label className='label' >
-        <div className="name">Contact no :</div>
-
-         
-          <input
-            type="text"
-            name="contactno"
-            className='input'
-            value={formData.contactno}
-            onChange={handleInputChange}
-          />
+        
         </label><br />
         {/* <Link to="/submit"> */}
 
