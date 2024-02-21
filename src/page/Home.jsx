@@ -9,12 +9,13 @@ const Container = () => {
             <div className="container">
                 <div className="logoBlock">
 
-                    <img className='logo' src="https://firebasestorage.googleapis.com/v0/b/eacc-16da4.appspot.com/o/nmp.svg?alt=media&token=c2b9a14a-e36c-46f5-bb2c-3f28704b0537" alt="not found!" /><span className='logotext'>Alma</span>
+                    {/* <img className='logo' src="https://firebasestorage.googleapis.com/v0/b/eacc-16da4.appspot.com/o/nmp.svg?alt=media&token=c2b9a14a-e36c-46f5-bb2c-3f28704b0537" alt="not found!" /> */}
+                    <span className='logotext'>AI assistant for child welfare</span>
                 </div>
                 <div className="heading">
                     <span>
 
-                        Clinical data platform for institutions to track children wellbeing and deliver care support to parents.
+                        We build for institutions to track children wellbeing and deliver care support to parents.
 
                     </span>
 
@@ -35,7 +36,7 @@ const Container = () => {
                 </Link>
                 <div className='footer'>
                     <img src="https://firebasestorage.googleapis.com/v0/b/eacc-16da4.appspot.com/o/nmp.svg?alt=media&token=c2b9a14a-e36c-46f5-bb2c-3f28704b0537" alt="" />
-                    Alma &copy; all copyright reserved <br /><br />REACH US AT :
+                    Almalabs &copy; all copyright reserved <br /><br />REACH US AT :
                     <a className='linkfooter' href='mailto:support@tryalma.in'>
                         support@tryalma.in
                     </a>
